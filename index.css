@@ -1,0 +1,104 @@
+.top-bar {
+
+}
+
+button, input[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    transition-duration: 200ms;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.30), inset 0 0 20px 0px rgba(0, 0, 0, 0.30);
+}
+
+button:active, input[type="submit"]:active {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.3), inset 0 0 20px 0px rgba(255, 255, 255, 1);
+}
+
+canvas {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.canvas_div {
+    overflow: hidden;
+}
+
+.setting_page {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0px;
+    width: 30%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateX(-30vw);
+    box-shadow: 0 0 0 0 white;
+    transition-duration: 200ms;
+}
+
+.setting_page_active {
+    box-shadow: 0 0 100px 10px black;
+    transform: translateX(0);
+}
+
+.abort_area {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition-duration: 200ms;
+}
+.abort_area_active {
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#setting_items {
+    background-color: rgb(255, 255, 255, 0.1);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    backdrop-filter: blur(2px);
+}
+
+input[type="number"] {
+    border: none;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    transition-duration: 200ms;
+}
+
+input[type="submit"] {
+    color: white;
+    width: 95%;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="main_page">
+            <div class="top-bar">
+                <button onclick="startTraining()">Start</button>
+                <button onclick="stopTraining()">Stop</button>
+                <button onclick="goToSetting()">Setting</button>
+            </div>
+            <div id="canvas_div"><canvas id="canvas"></canvas></div>
+        </div>
+        <div class="abort_area" onclick="goToSetting()"></div>
+        <div class="setting_page">
+            <form name="setting" onsubmit="applySetting()">
+                <div id = "setting_items">Random min: <input type="number" name="r_min"><br></div>
+                <div id = "setting_items">Random max: <input type="number" name="r_max"><br></div>
+                <div id = "setting_items">Random circle radius min <input type="number" name="rr_min"><br></div>
+                <div id = "setting_items">Random circle radius max <input type="number" name="rr_max"><br></div>
+                <div id = "setting_items"><input type="submit" value="Apply"></div>
+            </form>
+        </div>
+    </body>
+    <script src="./index.js"></script>
+</html>
